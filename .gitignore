@@ -73,7 +73,7 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+#.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+# Code Reference : https://www.youtube.com/watch?v=H9M02of22z4
+# GitHun Reference : https://github.com/dmalvia/Express_MongoDB_Rest_API_Tutorial/blob/HEAD/controllers/userController.js
