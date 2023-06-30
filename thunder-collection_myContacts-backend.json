@@ -1,0 +1,180 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "myContacts-backend",
+    "dateExported": "2023-06-30T14:05:34.525Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b0437986-399f-4bee-ae9e-7950835a2144",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "http://localhost:5000/welcome",
+            "url": "http://localhost:5000/welcome",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-30T13:58:57.516Z",
+            "modified": "2023-06-30T13:58:57.516Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8a342cdd-b26b-4f26-938c-7b07831313a3",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Register Admin User",
+            "url": "http://localhost:5000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-30T14:00:07.361Z",
+            "modified": "2023-06-30T14:00:07.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Parag\",\n  \"email\": \"PT@gmail.com\",\n  \"password\": \"pt@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4c2121c9-8e39-4b72-a6bc-a10c0f596939",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Login Admin User",
+            "url": "http://localhost:5000/api/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-30T14:00:39.088Z",
+            "modified": "2023-06-30T14:00:39.088Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"PT@gmail.com\",\n  \"password\": \"pt@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c939f93d-35a5-4416-963b-9f244f11a2fa",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Get Current Admin User Details",
+            "url": "http://localhost:5000/api/users/current",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-06-30T14:00:58.958Z",
+            "modified": "2023-06-30T14:00:58.958Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"PT@gmail.com\",\n  \"password\": \"pt@123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiUGFyYWciLCJlbWFpbCI6IlBUQGdtYWlsLmNvbSIsImlkIjoiNjQ5ZDliYjg2NGYyMGYxNjhkNTYzMDUyIn0sImlhdCI6MTY4ODA2Mjk1MCwiZXhwIjoxNjg4MDY2NTUwfQ.grcTv0Os4XO1F6YKsou_xFwAn3ks0XreelScsWwt-4E"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bbe6f3ac-a9a0-4491-b6ce-c05179e45633",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Get All User (for that specific admin/creator users)",
+            "url": "http://localhost:5000/api/contacts",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-30T14:01:56.609Z",
+            "modified": "2023-06-30T14:01:56.609Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiUGFyYWciLCJlbWFpbCI6IlBUQGdtYWlsLmNvbSIsImlkIjoiNjQ5ZDliYjg2NGYyMGYxNjhkNTYzMDUyIn0sImlhdCI6MTY4ODEzMzYyMSwiZXhwIjoxNjg4MTM3MjIxfQ.EkGuPzlP-gVrx3uI2FnId_Kn2AcjgIeCo9x69B1TJcM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "8e7aeec6-b1f7-43ba-9296-595d0dab3bb2",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Get Contact details for specific users (for that admin/creator user)",
+            "url": "http://localhost:5000/api/contacts/649d88d65bb8da17a7c40e78",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-06-30T14:03:22.178Z",
+            "modified": "2023-06-30T14:03:22.178Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiUGFyYWciLCJlbWFpbCI6IlBUQGdtYWlsLmNvbSIsImlkIjoiNjQ5ZDliYjg2NGYyMGYxNjhkNTYzMDUyIn0sImlhdCI6MTY4ODEzMzYyMSwiZXhwIjoxNjg4MTM3MjIxfQ.EkGuPzlP-gVrx3uI2FnId_Kn2AcjgIeCo9x69B1TJcM"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1323ff76-5f93-4d7e-b679-fe9d7e14047b",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Create contact",
+            "url": "http://localhost:5000/api/contacts",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-06-30T14:04:27.700Z",
+            "modified": "2023-06-30T14:04:27.700Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Manali Dhuri delete kar\",\n  \"email\": \"MD@gmail.com\",\n  \"phone\": \"7954613278\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiUGFyYWciLCJlbWFpbCI6IlBUQGdtYWlsLmNvbSIsImlkIjoiNjQ5ZDliYjg2NGYyMGYxNjhkNTYzMDUyIn0sImlhdCI6MTY4ODA2NTE1MywiZXhwIjoxNjg4MDY4NzUzfQ.unQReUQlxGW2Q-EH4d9DqnaKlBthPj6OSEScN3YYU7Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1efcb73e-5e5d-48a6-8e5a-8e0f6b6298fd",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Update contact",
+            "url": "http://localhost:5000/api/contacts",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-06-30T14:04:52.930Z",
+            "modified": "2023-06-30T14:04:52.930Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Manali Dhuri delete kar\",\n  \"email\": \"MD@gmail.com\",\n  \"phone\": \"7954613278\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiUGFyYWciLCJlbWFpbCI6IlBUQGdtYWlsLmNvbSIsImlkIjoiNjQ5ZDliYjg2NGYyMGYxNjhkNTYzMDUyIn0sImlhdCI6MTY4ODA2NTE1MywiZXhwIjoxNjg4MDY4NzUzfQ.unQReUQlxGW2Q-EH4d9DqnaKlBthPj6OSEScN3YYU7Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a05d394a-a973-458b-8c4d-d416bff1791d",
+            "colId": "bfdfa83c-7e29-4abf-b6a2-42fb950995ee",
+            "containerId": "",
+            "name": "Delete contact",
+            "url": "http://localhost:5000/api/contacts/649dd9f07b99a8b3fb9a4d36",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-06-30T14:05:22.802Z",
+            "modified": "2023-06-30T14:05:22.802Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
